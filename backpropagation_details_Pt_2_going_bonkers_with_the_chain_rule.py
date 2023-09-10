@@ -97,7 +97,7 @@ line3, = ax.plot(x, y[1],color= "orange")
 ax.scatter(x_train, y_train, s=100)
 ax.margins(y=1)
 
-for i in range (7000): 
+for i in range (460): 
    
     y_pred,x1_i,x2_i,y1_i,y2_i  = passforward(x_train, w1, w2, w3, w4, b1, b2, b3)
     
@@ -140,6 +140,7 @@ for i in range (7000):
     time.sleep(0.1)
 
 
+plt.savefig("Pt_2.png")
 
 
 
